@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Products</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0b1e3f; /* Dark Blue Background */
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 250px;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      color: black;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product h2 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .product p {
+      font-weight: bold;
+      color: #444;
+    }
+
+    .product a {
+      text-decoration: none;
+      background-color: #102f67; /* Dark Blue Button */
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+      transition: 0.3s ease;
+    }
+
+    .product a:hover {
+      background-color: #0c234d; /* Darker Blue on hover */
+    }
+
+    @media (max-width: 600px) {
+      .product-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Product Gallery</h1>
+
+  <div class="product-list">
+
+    <div class="product">
+      <img src="/assets/bag.jpg" alt="Leather Handbag">
+      <h2>Leather Handbag</h2>
+      <p>Price: $50</p>
+      <a href="/product1">Product Detail</a>
+    </div>
+
+    <div class="product">
+      <img src="/assets/watch.jpg" alt="Stylish Watch">
+      <h2>Stylish Watch</h2>
+      <p>Price: $120</p>
+      <a href="/product2">Product Detail</a>
+    </div>
+
+    <div class="product">
+      <img src="/assets/shoes.jpg" alt="Running Shoes">
+      <h2>Running Shoes</h2>
+      <p>Price: $80</p>
+      <a href="/product3">Product Detail</a>
+    </div>
+
+  </div>
+</body>
+</html>
